@@ -13,3 +13,12 @@ class AddPassengerIdToRides < ActiveRecord::Migration
     end
   end
 end
+
+
+class AddTaxiIdToRides < ActiveRecord::Migration
+  def change
+    change_table :rides do |t|
+      t.integer :taxi_id
+    end
+  end
+end
